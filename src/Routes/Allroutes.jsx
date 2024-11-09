@@ -8,6 +8,7 @@ import Contact from '../Page/Contact'
 import Navbar from '../Component/Navbar'
 import Plantfish from '../Component/Plantfish'
 import Descriptionpage from '../Component/Descriptionpage'
+import Cart from '../Component/Cart'
 
 
 const Allroutes = () => {
@@ -22,6 +23,7 @@ const Allroutes = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path="/" element={<Plantfish />} />
         <Route path="/product/:productId" element={<Descriptionpage />} />
+        <Route path="/cart" element={<Cart/>} />
         </Routes> 
     </div>
   )

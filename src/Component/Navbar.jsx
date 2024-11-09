@@ -19,21 +19,25 @@ const Navbar = () => {
       >
         <Link to="/faq">FAQ</Link>
         <Link to="/signin">Signin</Link>
-        <Link to="/signin">Signup</Link>
+        <Link to="/signup">Signup</Link>
         <Link to="/contact">Contact Us</Link>
       </Flex>
 
       {/* Logo section with responsive styling */}
+
       <Flex
         as="nav"
         align="center"
-        justify="flex-start"
+        justify="Space-Between"
         wrap="wrap"
         height="100px"
         color="#fff"
+        bg={"green.400"}
+        pl={4}
+        pr={4}
       >
         <Link to="/">
-          <Box width={"90px"} height={"90px"} >
+          <Box width={"90px"} height={"90px"}>
             <Image
               src="https://i.postimg.cc/sgB3TTG1/Logo-Aquarium-Fish-Store.png"
               alt="Aquarium Fish Store"
@@ -43,6 +47,9 @@ const Navbar = () => {
             />
           </Box>
         </Link>
+        <Box color="black" fontFamily={"bold"} fontSize={20}>
+          <Link to="/cart" >Cart</Link>
+        </Box>
       </Flex>
     </Box>
   );

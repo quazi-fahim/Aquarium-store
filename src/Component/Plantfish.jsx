@@ -16,13 +16,13 @@ const products = [
 
 const Plantfish = () => {
   return (
-    <Box p={4} textAlign="center">
+    <Box p={3} textAlign="center" mt="50px"  m="50px">
       <Text fontSize="2xl" fontWeight="bold" mb={6}>
         AQUATIC PLANTS & FISH
       </Text>
 
       <Grid
-        templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)", lg: "repeat(5, 1fr)" }}
+        templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)", lg: "repeat(4, 1fr)" }}
         gap={4}
       >
         {products.map((product) => (

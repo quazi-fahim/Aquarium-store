@@ -3,6 +3,7 @@ import BigSlider from '../Component/BigSlider'
 import Multibox from '../Component/Multibox'
 import Plantfish from '../Component/Plantfish'
 import { Box } from '@chakra-ui/react'
+import { Footer } from '../Component/Footer'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <BigSlider/>
       <Multibox/>
       <Plantfish/>
+      <Footer/>
 
     </Box>
   )

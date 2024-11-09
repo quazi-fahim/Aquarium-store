@@ -3,6 +3,7 @@ import { applyMiddleware, combineReducers, legacy_createStore}from "redux"
 import {thunk}from "redux-thunk";
 import{logger} from "redux-logger"
 import reducer from "./Signin/Reducer";
+import cartReducer from "./Cart.jsx/cartreducer";
 
 
 
@@ -11,6 +12,7 @@ import reducer from "./Signin/Reducer";
 
 export const rootreducer=combineReducers({
   sign:reducer,
+  cart:cartReducer
 })
 
 
